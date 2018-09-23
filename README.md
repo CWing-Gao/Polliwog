@@ -87,6 +87,80 @@ There is only one set of development framework design at present, and we will pr
           }
       }
 
+#### Adapter 
+      public class AdapterHomeList extends ArrayAdapter<ContentCourseItem> {
+
+          private int resourceId;
+          private AppCompatActivity parent=null;
+          private List<ContentCourseItem> list;
+          Main.MainHandler mainHandler=null;
+
+
+          public AdapterHomeList(@NonNull Context context, @LayoutRes int resource, List<ContentCourseItem> objects,Main.MainHandler handler) {
+              super(context, resource, objects);
+              this.parent=(AppCompatActivity) context;
+              Log.d("resourceId", resource + "");
+              this.resourceId = resource;
+              this.list=objects;
+              this.mainHandler=handler;
+          }
+
+
+          @Override
+          public View getView(int position, @Nullable final View convertView, @NonNull ViewGroup parent) {
+              Log.d("resourceId", resourceId + "");
+              View view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
+
+              ContentCourseItem content=(ContentCourseItem) getItem(position);
+
+              ImageView image1=(ImageView) view.findViewById(R.id.image_1);
+              TextView textName1=(TextView) view.findViewById(R.id.text_name_1);
+              TextView textTeacher1=(TextView) view.findViewById(R.id.text_teacher_1);
+              TextView textType1=(TextView) view.findViewById(R.id.text_type_1);
+
+
+
+              image1.setImageBitmap(content.image_1);
+              textName1.setText(content.name_1);
+              textTeacher1.setText(content.teacher_1);
+              textType1.setText(content.type_1);
+
+              ImageView image2=(ImageView) view.findViewById(R.id.image_2);
+              TextView textName2=(TextView) view.findViewById(R.id.text_name_2);
+              TextView textTeacher2=(TextView) view.findViewById(R.id.text_teacher_2);
+              TextView textType2=(TextView) view.findViewById(R.id.text_type_2);
+
+              image2.setImageBitmap(content.image_2);
+              textName2.setText(content.name_2);
+              textTeacher2.setText(content.teacher_2);
+              textType2.setText(content.type_2);
+
+
+              LinearLayout linearLayout1=(LinearLayout) view.findViewById(R.id.linear_1);
+              LinearLayout linearLayout2=(LinearLayout) view.findViewById(R.id.linear_2);
+
+              linearLayout1.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      Message msg=new Message();
+                      msg.what= Msg.ACTION_INTO_COURSE;
+                      mainHandler.sendMessage(msg);
+
+                  }
+              });
+
+              linearLayout2.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      Message msg=new Message();
+                      msg.what= Msg.ACTION_INTO_COURSE;
+                      mainHandler.sendMessage(msg);
+                  }
+              });
+
+              return view;
+          }
+      }
 
 
 
