@@ -43,7 +43,7 @@ There is only one set of development framework design at present, and we will pr
 
       public class PageName implements View.OnClickListener, {
           AppCompatActivity parent=null;	//Parent Activity
-          MainActivity.MainHandler mainHandler=null;		//Core handle processor
+          MainActivity.MainHandler mainHandler=null;  //Core handle processor
           
          //All widget declarations detected
          //privat Widgetclass Widget+name=null;
@@ -64,7 +64,7 @@ There is only one set of development framework design at present, and we will pr
               buttonName=(Button) parent.findViewById(R.id.butt_back);
           }
 
-         /// / Widget proprietary function
+         //Widget proprietary function
           @Override
           public void onClick(View view) {		
               Message msg=new Message();
