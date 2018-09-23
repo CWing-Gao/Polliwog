@@ -164,7 +164,40 @@ There is only one set of development framework design at present, and we will pr
 
 ### identify schedules of widget (You can expand it)
 
-|Name|Package|function|
+| Name | Package | function |
 |--|--|--|
-|Button|android.widget.Button|onClick(View v)|
+|Button | android.widget.Button | onClick(View v) |
+|ToggleButton | android.widget.ToggleButton | |
+|Textview | android.widget.TextView | |
+|checkbox | android.widget.CheckBox | |
+|RadioButton | android.widget.RadioButton | |
+|checkedTextView | android.widget.CheckedTextView | |
+|spinner	|	android.widget.Spinner ||
+|progressbar	| android.widget.ProgressBar ||
+|seekbar | android.widget.SeekBar ||
+|QuickcontactBadge	|	android.widget.QuickContactBadge ||
+|ratingbar |	android.widget.RatingBar ||
+|switch | android.widget.switch ||
+|Space	| android.widget.Space ||
+|gridlayout |||
+|framelayout	| android.widget.FrameLayout||
+|linearlayout | android.widget.LinearLayout ||
+|relativelayout	| android.widget.RelativeLayout||
+|tablelayout | android.widget.TableLayout ||
+|tablerow	| android.widget.TableRow ||
+|radiogroup | android.widget.RadioGroup ||
+|listview	| android.widget.ListView ||
+|expandablelistview | android.widget.ExpandableListView ||
+|scrollview | android.widget.ScrollView ||
+|horizontalscrollview | android.widget.HorizontalScrollView||
+|tabhost	|android.widget.TabHost||
+|webview|android.webkit.WebView||
+|searchview	|android.widget.SearchView||
+|imagebutton	| android.widget.ImageButton||
+|imageview|android.widget.ImageView||
+|videoview | android.widget.VideoView||
+|datepicker | android.widget.DatePicker||
+|timepicker | android.widget.TimePicker||
+|calenderview| ||
+|textclock | android.widget.TextClock||
 
