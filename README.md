@@ -29,7 +29,7 @@ There is only one set of development framework design at present, and we will pr
 ### The generation paradigm for Java code  
 
 #### PageClass
-'''
+'''  
 package cwing;	//工程包
 
 //基础包含
@@ -86,7 +86,7 @@ public PageGet(AppCompatActivity parent, Handler mainHandler){
     public void onClose() {
         return false;
     }
-}
+}   
 
 '''
 
