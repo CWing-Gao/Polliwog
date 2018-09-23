@@ -29,32 +29,30 @@ There is only one set of development framework design at present, and we will pr
 
 #### PageClass
 
-      package cwing;	//工程包
+      package cwing;  //Project package
 
-      //基础包含
+      //Basic import
       import android.os.Handler;
       import android.os.Message;
       import android.support.v7.app.ActionBar;
       import android.support.v7.app.AppCompatActivity;
 
-      //布局控件类包含
+      //Widget class contains
       import android.widget.Button;
 
 
       public class PageName implements View.OnClickListener, {
-          AppCompatActivity parent=null;	//父活动
-          MainActivity.MainHandler mainHandler=null;		//核心句柄处理器
-         //检测到的所有控件声明,格式：
-      //		privat 控件类 控件类名+名字=null;
+          AppCompatActivity parent=null;	//Parent Activity
+          MainActivity.MainHandler mainHandler=null;		//Core handle processor
+          
+         //All widget declarations detected
+         //privat Widgetclass Widget+name=null;
           private Button buttonName=null;
 
-          //构造方法
       public PageGet(AppCompatActivity parent, Handler mainHandler){
               this.parent= parent;
              this.mainHandler=( MainActivity.MainHandler)mainHandler;
           }
-
-
 
           public void setUI() {
               parent.setContentView(R.layout.page_name);
@@ -66,10 +64,9 @@ There is only one set of development framework design at present, and we will pr
               buttonName=(Button) parent.findViewById(R.id.butt_back);
           }
 
-
-
+         /// / Widget proprietary function
           @Override
-          public void onClick(View view) {		//控件专有函数
+          public void onClick(View view) {		
               Message msg=new Message();
               switch (view.getId()){
                   case R.id.butt_back:
