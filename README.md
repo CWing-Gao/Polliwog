@@ -5,7 +5,8 @@ A tool of android demo rapid generation for college student.
 Developer: Shengzhong Tang, Yifan Zhu  
 Assistant：Liangyan Mo, Mengjiao He**  
 (Email:cwing.gao@gmail.com / 302787376@qq.com)  
-  
+We welcome you to join us，and perfect and Perfect and extend this tool software together.
+
   
 ## overview   
   小蚂蚁是针对大学生或其他具有一定计算机基础的非专业人群提供的一套快速开发Android App Demo的实现框架和  
