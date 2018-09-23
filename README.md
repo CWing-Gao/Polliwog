@@ -17,7 +17,16 @@ Assistant：Liangyan Mo, Mengjiao He**
 满足更多App开发需求。  
   
   
-### Detailed introduction  
+## Detailed introduction  
 该框架主要是围绕Activity做的设计，在其层次之下设计了Page类，用以将每个布局文件进行实现，而后使用界面时  
 创建Page对象来完成界面控件的实际功能。
+
+### Framework introduction
+
+### Introduction of auxiliary software
+
+
+## Appendix
+
+
 
