@@ -16,8 +16,7 @@ There is only one set of development framework design at present, and we will pr
   
   
 ## Detailed introduction  
-该框架主要是围绕Activity做的设计，在其层次之下设计了Page类，用以将每个布局文件进行实现，而后使用界面时  
-创建Page对象来完成界面控件的实际功能。
+
 
 ### Framework introduction
 
@@ -29,27 +28,25 @@ There is only one set of development framework design at present, and we will pr
 ### The generation paradigm for Java code  
 
 #### PageClass
-'''  
-package cwing;	//工程包
 
-//基础包含
+'''java   
+package cwing;
+
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
-//布局控件类包含
+
 import android.widget.Button;
 
 
 public class PageName implements View.OnClickListener, {
-    AppCompatActivity parent=null;	//父活动
-    MainActivity.MainHandler mainHandler=null;		//核心句柄处理器
-	//检测到的所有控件声明,格式：
-//		privat 控件类 控件类名+名字=null;
-    private Button buttonName=null;
+    AppCompatActivity parent=null;
+    MainActivity.MainHandler mainHandler=null;	
 
-    //构造方法
+    private Button buttonName=null;
+    
 public PageGet(AppCompatActivity parent, Handler mainHandler){
         this.parent= parent;
        this.mainHandler=( MainActivity.MainHandler)mainHandler;
@@ -87,7 +84,6 @@ public PageGet(AppCompatActivity parent, Handler mainHandler){
         return false;
     }
 }   
-
 '''
 
 
