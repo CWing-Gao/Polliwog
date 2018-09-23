@@ -29,24 +29,24 @@ There is only one set of development framework design at present, and we will pr
 
 #### PageClass
 
-      package cwing;  //Project package
+      package cwing;  *//Project package*
 
-      //Basic import
+      *//Basic import*
       import android.os.Handler;
       import android.os.Message;
       import android.support.v7.app.ActionBar;
       import android.support.v7.app.AppCompatActivity;
 
-      //Widget class contains
+      *//Widget class contains*
       import android.widget.Button;
 
 
       public class PageName implements View.OnClickListener, {
-          AppCompatActivity parent=null;	//Parent Activity
-          MainActivity.MainHandler mainHandler=null;  //Core handle processor
+          AppCompatActivity parent=null;	*//Parent Activity*
+          MainActivity.MainHandler mainHandler=null;  *//Core handle processor*
           
-         //All widget declarations detected
-         //privat Widgetclass Widget+name=null;
+         *//All widget declarations detected
+         //privat Widgetclass Widget+name=null;*
           private Button buttonName=null;
 
       public PageGet(AppCompatActivity parent, Handler mainHandler){
@@ -64,7 +64,7 @@ There is only one set of development framework design at present, and we will pr
               buttonName=(Button) parent.findViewById(R.id.butt_back);
           }
 
-         //Widget proprietary function
+         *//Widget proprietary function*
           @Override
           public void onClick(View view) {		
               Message msg=new Message();
