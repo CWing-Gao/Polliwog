@@ -29,61 +29,8 @@ There is only one set of development framework design at present, and we will pr
 
 #### PageClass
 
-'''java   
-package cwing;
+   
+      package cwing;
 
-import android.os.Handler;
-import android.os.Message;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-
-
-import android.widget.Button;
-
-
-public class PageName implements View.OnClickListener, {
-    AppCompatActivity parent=null;
-    MainActivity.MainHandler mainHandler=null;	
-
-    private Button buttonName=null;
-    
-public PageGet(AppCompatActivity parent, Handler mainHandler){
-        this.parent= parent;
-       this.mainHandler=( MainActivity.MainHandler)mainHandler;
-    }
-
-
-
-    public void setUI() {
-        parent.setContentView(R.layout.page_name);
-        ActionBar actionBar = parent.getSupportActionBar();
-        actionBar.hide();
-    }
-
-    public void loadControl() {
-        buttonName=(Button) parent.findViewById(R.id.butt_back);
-    }
-
-
-
-    @Override
-    public void onClick(View view) {		//控件专有函数
-        Message msg=new Message();
-        switch (view.getId()){
-            case R.id.butt_back:
-                break;
-        }
-
-    }
-
-    void memoryClear()
-    {
-    }
-
-    public void onClose() {
-        return false;
-    }
-}   
-'''
 
 
