@@ -5,7 +5,7 @@ A tool of android demo rapid generation for college student.
 Developer: Shengzhong Tang, Yifan Zhu  
 Assistant：Liangyan Mo, Mengjiao He**  
 (Email:cwing.gao@gmail.com / 302787376@qq.com)  
-_ We welcome you to join us，and perfect and Perfect and extend this tool software together. _
+*We welcome you to join us，and perfect and Perfect and extend this tool software together.*
 
   
 ## overview   
