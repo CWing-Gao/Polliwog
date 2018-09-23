@@ -9,13 +9,9 @@ Assistant：Liangyan Mo, Mengjiao He**
 
   
 ## overview   
-  小蚂蚁是针对大学生或其他具有一定计算机基础的非专业人群提供的一套快速开发Android App Demo的实现框架和  
-辅助软件。该设计框架与AndroidStudio(From Google)软件结合，使用我们的辅助软件(Polliwog v-1.0)可以  
-实现了从可视化的界面开发到 Java代码实现的自动生成，自动生成部分主要是形式固定的代码部分，约占总代码量  
-的45%以上，对于面向用户的应用型App的Demo开发最为合适，用户可以根据需求自主调整自动生成的内容和格式，  
-修改我们的框架以适合自身的开发需求。  
-  目前只有一套开发框架设计，在后续版本更新迭代过程中，我们将提供更多的App设计框架以及更个性化的辅助软件，  
-满足更多App开发需求。  
+Polliwog is a set of framework and auxiliary software of rapid developing Android App Demo for college students or other non-professional groups with a certain computer foundation. This auxiliary software need be combined with Android Studio (From Google) software. It can realize the automatic generation from visual interface development to Java code. The automatic generation part is mainly a fixed form of code part, which is most suitable for user-oriented application-oriented App Demo development. Users can adjust automatically generated content , format according to their needs and modify our framework to suit their own development needs.
+There is only one set of development framework design at present, and we will provide more design framework and more personalized assistant software to meet more needs of App demo development in the subsequent version update iteration process.
+
   
   
 ## Detailed introduction  
