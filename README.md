@@ -18,25 +18,24 @@ There is only one set of development framework design at present, and we will pr
 ## Detailed introduction  
 
 ### Framework introduction
-The framework is mainly designed around the Activity, we design the Page class under the level of which. We use the Page class to implement each layout file, and then create a Page object to complete the actual function of the interface control when using the interface. The structure of the frame is as follows:
+The framework is mainly designed around the Activity, we design the Page class under the level of which. We use the Page class to implement each layout file, and then create a Page object to complete the actual function of the interface widgets when using the interface. The structure of the frame is as follows:
 ![image](https://github.com/CWing-Gao/Polliwog/blob/master/Images-folder/figure_1.png)
 
-It requires developers to write a holistic layout during the development process. A completed page is completed by a ***.xml file or eventually a variety of scattered controls are referenced in a ***.xml file.
-In addition to the Page class, there are Adapter classes, Msg classes, and so on. The Adapter class is designed and implemented for the Listview and other controls to facilitate the addition of the Item layout to the Listview control through the adapter. The Msg class is a message declaration class that declares information encoding and command encoding between Page and Page, Page and Activity. Of course, you can create a new class generator by modifying our code to suit your own design framework.
-The communication between Page itself as well as Page and Activity is implemented by Handler.
+It requires developers to write a holistic layout during the development process. A completed page is completed by a ***.xml file or eventually a variety of scattered widgets are referenced in a ***.xml file.
+In addition to the Page class, there are Adapter classes, Msg classes, and so on. The Adapter class is designed and implemented for the Listview and other widgets to facilitate the addition of the Item layout to the Listview widget through the adapter. The Msg class is a message declaration class that declares information encoding and command encoding between Page and Page, Page and Activity. Of course, you can create a new class generator by modifying our code to suit your own design framework.The communication between Page itself as well as Page and Activity is implemented by Handler.
 
 
 ### Introduction of auxiliary software
 #### XML file writing
 Regarding the layout file, the development process is not different from the original development process. It mainly uses the development tools inside Android Studio and complete by the combination of visual drag-and-drop development and code writing.
-Among them, in order to facilitate the use of the auxiliary code generation tool, each Page layout should have a complete layout file to be combined, and your file name should be unified in the prefix or suffix, as well as the Adapter Item interface.
+Among them, in order to facilitate the use of the auxiliary code generation tool, each Page layout should have a complete layout file to be combined, and your file name should be unified in the prefix or suffix.
 
 #### Java code generation
 After generating the XML code, you can use the auxiliary software to generate Java code in a fixed format. The developer only needs to fill in the response logic part of the control to complete a simple demo development.
 
 #### Auxiliary software instructions
 The auxiliary software can convert the folders of the constituent files of multiple layout files into Java code, or convert a single file once. In the overall project generation, you need to set the recognition characters in the settings to let the software distinguish your layout file types. For example, if all Page layout files have a prefix (or suffix) Page, you can set them in the settings. The settings will be saved locally as a file for continued use, but not for individual file generation.
-The implementation function of each control to be generated is stored in the widget_collection.csv file. When converting, the software firstly recognizes the XML file and then reads the settings in the widget_collection.csv to generate the Java code, so the user can extend the control type and its own function without modifying the source code of the program.
+The implementation function of each widget to be generated is stored in the widget_collection.csv file. When converting, the software firstly recognizes the XML file and then reads the info of settings in the widget_collection.csv to generate the Java code, so the user can extend the control type and its own function without modifying the source code of the program.
 
 
 ## Appendix
