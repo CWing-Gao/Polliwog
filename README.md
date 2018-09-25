@@ -19,6 +19,8 @@ There is only one set of development framework design at present, and we will pr
 
 ### Framework introduction
 The framework is mainly designed around the Activity, we design the Page class under the level of which. We use the Page class to implement each layout file, and then use the interface to create a Page object to complete the actual function of the interface control. The structure of the frame is as follows:
+![image](https://github.com/CWing-Gao/Polliwog/blob/master/Images-folder/figure_1.png)
+
 It requires developers to write a holistic layout during the development process. A completed page is completed by a ***.xml file or eventually a variety of scattered controls are referenced in a ***.xml file.
 In addition to the Page class, there are Adapter classes, Msg classes, and so on. The Adapter class is designed and implemented for the Listview and other controls to facilitate the addition of the Item layout to the Listview control through the adapter. The Msg class is a message declaration class that declares information encoding and command encoding between Page and Page, Page and Activity. Of course, you can create a new class generator by modifying our code to suit your own design framework.
 The communication between Page itself as well as Page and Activity is implemented by Handler.
