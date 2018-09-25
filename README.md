@@ -18,7 +18,7 @@ There is only one set of development framework design at present, and we will pr
 ## Detailed introduction  
 
 ### Framework introduction
-The framework is mainly designed around the Activity, we design the Page class under the level of which. We use the Page class to implement each layout file, and then use the interface to create a Page object to complete the actual function of the interface control. The structure of the frame is as follows:
+The framework is mainly designed around the Activity, we design the Page class under the level of which. We use the Page class to implement each layout file, and then create a Page object to complete the actual function of the interface control when using the interface. The structure of the frame is as follows:
 ![image](https://github.com/CWing-Gao/Polliwog/blob/master/Images-folder/figure_1.png)
 
 It requires developers to write a holistic layout during the development process. A completed page is completed by a ***.xml file or eventually a variety of scattered controls are referenced in a ***.xml file.
